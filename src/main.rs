@@ -13,9 +13,6 @@ fn main() {
                 generate::GenerateResourceCommand::Feature(command) => {
                     generate::feature::handler::handle(command);
                 }
-                generate::GenerateResourceCommand::Service(command) => {
-                    generate::service::handler::handle(command);
-                }
             }
         }
     }
