@@ -9,7 +9,14 @@ fn main() {
 
     match cli.command {
         Commands::Generate(cmd) => {
-            generate::handler::handle(cmd.resource);
+            match cmd.resource {
+                generate::GenerateResourceCommand::Feature(command) => {
+                    generate::feature::handler::handle(command);
+                }
+                generate::GenerateResourceCommand::Service(command) => {
+                    generate::service::handler::handle(command);
+                }
+            }
         }
     }
 }

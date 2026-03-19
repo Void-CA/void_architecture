@@ -1,5 +1,5 @@
-pub mod commands;
-pub mod resource;
-pub mod handler;
+pub mod command;
+pub mod feature;
+pub mod service;
 
-pub use commands::*;
+pub use command::{GenerateCommand, GenerateResourceCommand};
