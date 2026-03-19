@@ -1,3 +1,3 @@
-pub fn handle(feature_name: &str) {
+pub fn execute(feature_name: &str) {
     println!("Generating Tauri feature: {}", feature_name);
 }
